@@ -1,11 +1,11 @@
 @charset "UTF-8";
 
-.allitem-page{background-image: url('https://yorunosaiki.jp/wp-content/themes/yoru-saiki/img/buff/PANA2777.jpeg');}
-.item-page{background-image: url('https://yorunosaiki.jp/wp-content/themes/yoru-saiki/img/buff/PANA2742.jpeg');}
-.about-page{background-image: url('https://yorunosaiki.jp/wp-content/themes/yoru-saiki/img/buff/DSC06307.jpg');}
-.contact-page{background-image: url('https://yorunosaiki.jp/wp-content/themes/yoru-saiki/img/buff/DSC06037.jpeg');}
-.privacy-page{background-image: url('https://yorunosaiki.jp/wp-content/themes/yoru-saiki/img/buff/DSC05878.jpeg');}
-.act-page{background-image: url('https://yorunosaiki.jp/wp-content/themes/yoru-saiki/img/buff/DSC05934.jpeg');}
+.allitem-page{background-image: url('https://kitaji-n.github.io/Buff/img/PANA2777.jpeg');}
+.item-page{background-image: url('https://kitaji-n.github.io/Buff/img/PANA2742.jpeg');}
+.about-page{background-image: url('https://kitaji-n.github.io/Buff/img/DSC06307.jpg');}
+.contact-page{background-image: url('https://kitaji-n.github.io/Buff/img/DSC06037.jpeg');}
+.privacy-page{background-image: url('https://kitaji-n.github.io/Buff/img/DSC05878.jpeg');}
+.act-page{background-image: url('https://kitaji-n.github.io/Buff/img/DSC05934.jpeg');}
 
 .headimg{
     position: relative;
@@ -22,7 +22,7 @@
 }
 
 body.shop #mainFooter {
-    background-image: url(https://yorunosaiki.jp/wp-content/themes/yoru-saiki/img/buff/PANA2871.jpeg);
+    background-image: url(https://kitaji-n.github.io/Buff/img/PANA2871.jpeg);
     height: auto;
     width: 100%;
     background-size: cover;
@@ -88,7 +88,7 @@ body.shop #mainFooter {
 }
 @media only screen and (max-width: 720px){
 body.shop #mainFooter {
-    background-image: url(https://yorunosaiki.jp/wp-content/themes/yoru-saiki/img/buff/PANA2868.jpeg);
+    background-image: url(https://kitaji-n.github.io/Buff/img/PANA2868.jpeg);
     background-position-x: 63%;
     .footerMenu {
         flex-direction: column;
