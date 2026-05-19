@@ -1,0 +1,743 @@
+@charset "UTF-8";
+ 
+  /*-------------------------------------------------------------------------------------------------
+今すぐ購入ボタン
+-----------------------------------------------------------------------------------------------------*/
+.button {
+    --width: 100px;
+    --height: 35px;
+    --tooltip-height: 35px;
+    --tooltip-width: 90px;
+    --gap-between-tooltip-to-button: 18px;
+    --button-color: #222;
+    --tooltip-color: #fff;
+    width: var(--width);
+    height: var(--height);
+    background: var(--button-color);
+      position: absolute;
+      text-align: center;
+      border-radius: 0.45em;
+      font-family: "Noto Serif JP";
+      transition: background 0.3s;
+      left: 40%;
+      bottom: 5%;
+  }
+  
+  .button::before {
+    position: absolute;
+    content: attr(data-tooltip);
+    width: var(--tooltip-width);
+    height: var(--tooltip-height);
+    background-color: #555;
+    font-size: 0.9rem;
+    color: #fff;
+    border-radius: .25em;
+    line-height: var(--tooltip-height);
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+    left: calc(50% - var(--tooltip-width) / 2);
+  }
+  
+  .button::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #555;
+    left: calc(50% - 10px);
+    bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+  }
+  
+  .button::after,.button::before {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+  }
+  
+  .text-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button-wrapper,.text-cart,.icon {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    color: #fff;
+  }
+  
+  .text-cart {
+    top: 0
+  }
+  
+  .text-cart,.icon {
+    transition: top 0.5s;
+  }
+  
+  .icon {
+    color: #fff;
+    top: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .button:hover {
+    background: #222;
+  }
+  
+  .button:hover .text-cart {
+    top: -100%;
+  }
+  
+  .button:hover .icon {
+    top: 0;
+  }
+  
+  .button:hover:before,.button:hover:after {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .button:hover:after {
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+  }
+  
+  .button:hover:before {
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+  }
+  .allitem{
+      width: 100%;
+      height: 10svh;
+      .button{
+          width: 200px;
+          height: 50px;
+          bottom: 0;
+          font-size: 1.2rem;
+          position: relative;
+          margin: 5% auto;
+          left: 0;
+          }
+  }
+  
+  
+  /*------------------------------------------------------------------------------------
+  scroll_up ｜下から上へ出現
+  ------------------------------------------------------------------------------------*/
+  .scroll_up {
+    transition: 1.5s ease-in-out;
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  .scroll_up.on {
+    transform: translateY(0);
+    opacity: 1.0;
+  }
+  
+  /*------------------------------------------------------------------------------------
+  scroll_left ｜左から出現
+  ------------------------------------------------------------------------------------*/
+  .scroll_left {
+      -webkit-transition: 1.5s ease-in-out;
+      -moz-transition: 1.5s ease-in-out;
+      -o-transition: 1.5s ease-in-out;
+      transition: 1.5s ease-in-out;
+      transform: translateX(-10px);
+      opacity: 0;
+      filter: alpha(opacity=0);
+      -moz-opacity: 0;
+  }
+  .scroll_left.on {
+      opacity: 1.0;
+      filter: alpha(opacity=100);
+      -moz-opacity: 1.0;
+      transform: translateX(0);
+  }
+  
+  /*------------------------------------------------------------------------------------
+  scroll_right ｜右から出現
+  ------------------------------------------------------------------------------------*/
+  .scroll_right {
+      -webkit-transition: 1.5s ease-in-out;
+      -moz-transition: 1.5s ease-in-out;
+      -o-transition: 1.5s ease-in-out;
+      transition: 1.5s ease-in-out;
+      transform: translateX(10px);
+      opacity: 0;
+      filter: alpha(opacity=0);
+      -moz-opacity: 0;
+  }
+  .scroll_right.on {
+      opacity: 1.0;
+      filter: alpha(opacity=100);
+      -moz-opacity: 1.0;
+      transform: translateX(0);
+  }
+  
+  .timing02 {transition-delay: .2s;}
+  .timing03 {transition-delay: .4s;}
+  .timing04 {transition-delay: .6s;}
+  .timing05 {transition-delay: .8s;}
+  
+
+/*---------------------
+インスタグラム
+----------------------*/
+#instaWrapper{
+  margin: 10 auto 0 auto;
+    width: 90vw;
+    max-width: 1200px;
+    h2{
+    font-size: 3rem;
+    text-align: center;
+    }
+}
+@media only screen and (max-width: 580px){
+  #instaWrapper{
+      h2{
+      font-size: 1.5rem;
+      text-align: center;
+      }
+  }
+}
+
+
+#insta{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+    & a{
+        text-decoration: none;
+    }
+
+    & div{
+        box-sizing: border-box;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        padding-left: 0;
+
+        & div{
+            list-style: none;
+            box-sizing: border-box;
+            width: calc((100%  - 20px )/ 3 );
+            margin-bottom: 0.8em;
+            height: 240px;
+            position: relative;
+            height: auto;
+            aspect-ratio: 1;
+
+            & .captionTxt{
+                display: block;
+                width: 100%;
+                height: 100%;
+                padding: 16px;
+                font-size: 14px;
+                line-height: 1.8;
+                text-align: left;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: rgba(0,0,0,.75);
+                color: #fff;
+                opacity: 0;
+                
+            }
+
+            & .like_count{
+                font-size: 12px;
+                line-height: 2;
+                display: block;
+                text-align: center;
+                position: relative;
+
+                &::before{
+                    content: "\02665";
+                    color: #d4245f;
+                    font-size: 14px;
+                    vertical-align: middle;
+                    padding-right: 0.25em;
+                }
+            }
+
+            &:hover{
+                & .captionTxt{
+                    transition: .5s opacity, .25s filter;
+                    opacity: 1;
+                }
+            }
+
+            & img{
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                aspect-ratio: 1;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 420px){
+#insta{
+    width: 100%;
+    margin: 0 auto;
+
+    & a{
+        text-decoration: none;
+    }
+
+    & div{
+        box-sizing: border-box;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        padding-left: 0;
+
+        & div{
+            list-style: none;
+            box-sizing: border-box;
+            width: calc((100%  - 5px )/ 3 );
+            margin-bottom: 0.3em;
+            height: 240px;
+            position: relative;
+            height: auto;
+            aspect-ratio: 1;
+
+            & .captionTxt{
+                display: block;
+                width: 100%;
+                height: 100%;
+                padding: 0px;
+                font-size: 14px;
+                line-height: 1.8;
+                text-align: left;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: rgba(0,0,0,.75);
+                color: #fff;
+                opacity: 0;
+                
+            }
+
+            & .like_count{
+                font-size: 12px;
+                line-height: 2;
+                display: block;
+                text-align: center;
+                position: relative;
+
+                &::before{
+                    content: "\02665";
+                    color: #d4245f;
+                    font-size: 14px;
+                    vertical-align: middle;
+                    padding-right: 0.25em;
+                }
+            }
+
+            &:hover{
+                & .captionTxt{
+                    transition: .5s opacity, .25s filter;
+                    opacity: 1;
+                }
+            }
+
+            & img{
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                aspect-ratio: 1;
+            }
+        }
+    }
+}
+}
+.instalogo{
+  width: 90%;
+  display: flex;
+  margin: 0px auto 50px auto;
+  gap: 20px;
+  justify-content: start;
+  align-items: center;
+        & .instalogo-left{
+         width:30%;
+         text-align: right;
+            & img{
+            width: 50%;
+            height: auto;
+            aspect-ratio: 1;
+            border: 1px solid #111;
+            border-radius: 50%;
+            }
+            }
+        }
+@media(max-width:420px){
+.instalogo{
+    width: 90%;
+    display:block;
+    margin: 50px auto 30px auto;
+        & .instalogo-left{
+         width:40%;
+         margin:0 auto;
+            & img{
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1;
+            border: 1px solid #111;
+            border-radius: 50%;
+            }
+            }
+        }
+        .instalogo-right{
+            margin-top:50px;
+        }
+}
+
+
+/*------------------------------------------------------------------------------------
+                                        ハンバーガー
+-------------------------------------------------------------------------------------*/
+.sphum{ 
+    display:none;
+}
+@media only screen and (max-width: 1024px){
+  .sphum{ 
+    display:block;
+}
+.pc{
+  display:none;
+}
+*, *:before, *:after 
+{ box-sizing: border-box; }
+
+label .menu {
+  position: fixed;
+  right: -70px;
+  top: -70px;
+  z-index: 100;
+  width: 150px;
+  height: 150px;
+  background: #FFF;
+  border-radius: 50% 50% 50% 50%;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+  cursor: pointer;
+
+}
+
+label .hamburger {
+  position: fixed;
+  top: 35px;
+  right: 15px;
+  width: 30px;
+  height: 2px;
+  background: #69D2e7;
+  display: block;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+label .hamburger:after, label .hamburger:before {
+-webkit-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+content: "";
+position: absolute;
+display: block;
+width: 100%;
+height: 100%;
+background: #69d2e7;
+}
+
+label .hamburger:before { top: -10px; }
+
+label .hamburger:after { bottom: -10px; }
+
+label input{ display: none; }
+
+label input:checked + .menu {
+box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+border-radius: 0;
+
+}
+
+label input:checked + .menu .hamburger {
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+
+}
+
+label input:checked + .menu .hamburger:after {
+-webkit-transform: rotate(90deg);
+transform: rotate(90deg);
+bottom: 0;
+
+}
+
+label input:checked + .menu .hamburger:before {
+-webkit-transform: rotate(90deg);
+transform: rotate(90deg);
+top: 0;
+
+}
+
+label input:checked + .menu + ul { 
+  opacity: 1;
+  display:block;
+  transition: all 1s;
+}
+
+label ul {
+    display:none;
+    font-size: 1.5rem;
+    width: 80%;
+    z-index: 200;
+    position: fixed;
+    top: 30%;
+    left: 30%;
+    /* opacity: 0; */
+    transition: opacity 1s, display 1s;
+li{
+  img{
+      width:60%;
+  }
+}
+}
+
+label .hum-sns{
+  display:flex;
+  align-items: center;
+}
+label a {
+display: block;
+color: black;
+text-decoration: none;
+
+}
+
+sphum{
+  h1 {
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+width: 80%;
+text-align: center;
+}
+}
+}
+
+
+/* マーカーのスタイル */
+.marker {
+    background-image: linear-gradient(90deg, #ff9e9e, #ff9e9e); /* 線の色 */
+    background-position: left bottom; /* 線の起点を左・下に設定 */
+    background-repeat: no-repeat;
+    background-size: 0 .5em; /* 線の横幅を0、縦幅を0.5emに */
+    padding-bottom: 3px; /* 下線を下にズラす */
+    transition: background-size 1.5s; /* 線を伸ばすアニメーション実行時間を指定 */
+  }
+  /* マーカーが表示された時のスタイル */
+  .marker.active {
+    background-size: 100% .5em; /* 線の横幅を100%にする */
+  }
+  
+  .allitem{
+      .hbutton{
+          position: relative;
+          left: 0%;
+      }
+  }
+
+/* アイテムページ　ハンバーガー */
+.span-container,
+.checkbox {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Lets make our checkbox function but dissapear. Also lets add some z-index so it's always on top [clickable] */
+.checkbox {
+  opacity: 0;
+  z-index: 100;
+}
+
+/* Add some flex for our Three lines. Our span-container will have flex */
+
+.span-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  z-index: 90;
+}
+
+/* Style our span (3 burger-menu lines) */
+
+.span-container span {
+  width: 100%;
+  height: 3px;
+  background:#111;
+  /* //We need to add transition and a transform origin of 0 0 (top left).
+  //Try commenting bits out to see what happens and why it's important. */
+  transition: all 250ms ease-out;
+  transform-origin: 0 0;
+}
+
+/* //Transitions [animations]
+//Logic: When checkbox is checked:
+//Rotate Span1 -45Deg (first child or nth-last-child(1))
+//Make Span2 smaller + hide it.
+//rotate Span3 45 Deg.
+//The translate stuff is just for small adjustments. Try changing them and see //how the X looks like when checkbox:checked. */
+.checkbox:checked ~ .span-container span:nth-last-child(1) {
+    transform: rotate(-45deg) translate(-1px, 0px);
+}
+
+.checkbox:checked ~ .span-container span:nth-last-child(2) {
+    transform: rotate(0deg) scale(0.2, 0.2);
+    opacity: 0;
+}
+
+.checkbox:checked ~ .span-container span:nth-last-child(3) {
+    transform: rotate(45deg) translate(0px, -1px);
+}
+
+.nav-container{
+    position: fixed;
+    right: -100%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+    background: white;
+    font-size: 1.5rem;
+    transform: translateX(0);
+    transition: transform 0.5s;    
+    #baseMenu{
+        position: static;
+        margin: 5px auto;
+        .clearfix {
+            padding: 0;
+            position: static;
+            width: 100%;
+            margin: 0;
+                a{
+                    img{
+                        width: 100%;
+                    }
+                }
+        }
+    }
+    .hum-sns{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 5px auto;
+      img{
+          width: 50px;
+      }
+      }
+  }
+
+  .checkbox:checked ~ .nav-container {
+    transform: translateX(-100%);
+  }
+
+  #top_page{
+    .sphum{
+        .checkbox,.span-container{
+            top: 2rem;
+        }
+        .tab{
+        left: 6rem;
+        width: 100%;
+        gap: 2%;
+        }
+    }
+  }
+
+  h2.effect {
+     font-weight: 600;
+ }
+h2.effect{
+    display: inline-block;
+    padding: 4px 20px;
+    position: relative;
+}
+h2.effect,
+h2.effect::after {
+  animation-delay: var(--animation-delay, 2s); /* アニメーションの開始タイミング */
+  animation-iteration-count: var(--iterations, 1); /* 再生される回数 */
+  animation-duration: var(--duration, 800ms); /* 完了するまでの所要時間 */
+  animation-fill-mode: both; /* 実行の前後 */
+  animation-timing-function: cubic-bezier(0, 0, 0.2, 1); /* タイミングの指定 */
+}
+
+h2.effect.scroll-in{
+  --animation-delay: var(--delay, 0);
+  --animation-duration: var(--duration, 800ms);
+  --animation-iterations: var(--iterations, 1);
+  position: relative;
+  animation-name: clip-text;
+  white-space: nowrap;
+}
+h2.effect.scroll-in::after {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #252525;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  pointer-events: none;
+  animation-name: text-revealer;
+}
+
+@keyframes clip-text {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+@keyframes text-revealer {
+  0%, 50% {
+    transform-origin: 0 50%;
+  }
+  60%, 100% {
+    transform-origin: 100% 50%;
+  }
+  60% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+
+  

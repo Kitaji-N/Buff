@@ -1,0 +1,1053 @@
+// Scss Document
+
+//メニューの文字色
+$main_color:#666666;
+
+
+.MenuWidth{
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding-top: 50px;
+    }
+
+.Title{
+    color: #231815;
+    width: 90%;
+    margin: 0 auto 70px;
+    @media (min-width: 768px) {
+        width: 100%;
+        }
+    
+    h1{
+        text-align: right;
+        font-size: 3.4em;
+        margin: 30px auto 100px;
+        @media (min-width: 768px) {
+            font-size: 6em;
+            }
+        }
+    
+    h2{
+        font-size: 4em;
+        @media (min-width: 768px) {
+            font-size: 5em;
+            }
+        }
+    }
+
+.MenuTable{
+    margin: auto;
+    font-size: 1.0em;
+    width: 90%;
+    @media (min-width: 768px) {
+        font-size: 1.2em;
+        width: 100%;
+        }
+    
+    table{
+        width: 100%;
+        margin-top: 20px;
+        
+        .kakaku{
+            width: 80px;
+            }
+
+        tr{
+            line-height: 1.8em;
+
+            th{
+                vertical-align: top;
+                text-align: left;
+                
+                &.Doria{
+                    padding-left: 110px;
+                    }
+                }
+
+            td{
+                text-align: right;
+
+                .en{
+                    font-size: 0.7em;
+                    line-height: 2em;
+                    }
+                }
+            
+            .TextLeft{
+                text-align: left
+                }
+            }
+        }
+    
+    p{
+        text-align: right;
+        font-size: 0.9em;
+        margin-top: 5px;
+        }
+    }
+
+
+.Common{
+    
+    .MenuTitle{
+        margin-top: 50px;
+        &.first{
+            margin-top: 0px;
+            }
+        
+        &.Right{
+            text-align: right;
+            }
+        
+        h3{
+            font-size: 2.8em;
+            color: #3e3a39;
+            line-height: 0.7em;
+            @media (min-width: 768px) {
+                font-size: 5em;
+                }
+            }
+        
+        .Obi{
+            margin: auto;
+
+            h4{
+                background-color: #3e3a39;
+                color: #fff;
+                display: inline-block;
+                width: 100%;
+                font-size: 1.10em;
+                padding: 5px 20px;
+                font-feature-settings: "palt";
+                letter-spacing: 0.08em;
+                font-weight: bold;
+                }
+            }
+        }
+    
+    .PhotoBox{
+        position: relative;
+        
+        .Obi3{
+            position: absolute;
+            bottom: 20px;
+            width: 90%;
+            @media (min-width: 768px) {
+                width: 80%;
+                }
+            
+            &.Left{
+                right: 0;
+                }
+
+            h3{
+                background-color: #3e3a39;
+                color: #fff;
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+                font-size: 0.9em;
+                border-radius: 1px;
+                padding: 5px 10px;
+                font-feature-settings: "palt";
+                letter-spacing: 0.08em;
+                }
+            }
+        
+        .Pc img{
+            display: none;
+            @media (min-width: 768px) {
+                display: inherit;
+                }
+            }
+        
+        .Sp img{
+            @media (min-width: 768px) {
+                display: none;
+                }
+            }
+
+        img{
+            width: 100%;
+            height: auto;
+            }
+        
+        }
+    
+    .MenuBox{
+        width: 90%;
+        margin: 0 auto 40px;
+        @media (min-width: 768px) {
+            width: 100%;
+            margin-top: 10%;
+            &.Right{
+                padding-left: 10%;
+                }
+            &.Left{
+                padding-right: 10%;
+                }
+            }
+        
+        h5{
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            line-height: 1.3em;
+            font-weight: bold;
+            }
+        
+        p{
+            font-size: 1.0em;
+            line-height: 1.6em;
+            @media (min-width: 768px) {
+                margin-bottom: 40px;
+                }
+            }
+        }
+    }
+
+/*
+---------------------------------------------------------------------------------------------------------------------
+▼その他パスタ
+---------------------------------------------------------------------------------------------------------------------
+*/
+.Other{
+    overflow-x:scroll;
+    @media (min-width: 768px) {
+        margin-top: 50px;
+        }
+    
+    .OtherWidth{
+        display: flex;
+        width: 900px;
+        @media (min-width: 1024px) {
+            width: 1000px;
+            }
+        }
+    
+    .OtherBox{
+        padding-bottom: 20px;
+        
+        .Photo{
+            position: relative;
+            background-color: #3e3a39;
+            margin-bottom: 20px;
+            text-align: center;
+            padding-top: 20px;
+            
+            img{
+                width: 94%;
+                height: auto;
+                }
+            
+            .Text{
+                position: absolute;
+                top:25px;
+                left: 5%;
+                text-align: left;
+                }
+            
+            h4{
+                color: #231815;
+                font-size: 3em;
+                line-height: 0.9em;
+                margin-bottom: 10px;
+                }
+            
+            h5{
+                color: #fff;
+                font-size: 1.6em;
+                font-weight: bold;
+                font-feature-settings:"palt";
+                letter-spacing: 0.05em;
+                }
+            }
+        
+        .OtherMenu{
+            width: 95%;
+            margin: auto;
+            
+            h3{
+                font-size: 1.4em;
+                color: $main_color;
+                line-height: 0.7em;
+                margin-bottom: 15px;
+                font-weight: bold;
+                }
+
+            p{
+                font-size: 1.0em;
+                }
+            
+            }
+        }
+    }
+
+
+/*
+---------------------------------------------------------------------------------------------------------------------
+昔風鉄板パスタ
+---------------------------------------------------------------------------------------------------------------------
+*/
+.OldStyle{
+    margin-top: 80px;
+    
+    .MainPhoto{
+        position: relative;
+        
+        img{
+            width: 100%;
+            height: auto;
+            }
+        
+        .MenuName{
+            position: absolute;
+            top:5%;
+            left: 10px;
+            color: #fff;
+            
+            h4{
+                font-size: 2.4em;
+                @media (min-width: 768px) {
+                    font-size: 5em;
+                    }
+                }
+            
+            p{
+                font-size: 1.4em;
+                font-feature-settings: "palt";
+                letter-spacing: 0.08em;
+                margin-top: 15px;
+                @media (min-width: 768px) {
+                    margin-top: 35px;
+                    font-size: 2em;
+                    }
+                }
+            }
+        
+        .Obi3{
+            position: absolute;
+            bottom: 10px;
+            width: 90%;
+            right: 0;
+            @media (min-width: 768px) {
+                width: 50%;
+                bottom: 50px;
+                }
+
+            h3{
+                background-color: #3e3a39;
+                color: #fff;
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+                font-size: 1.0em;
+                border-radius: 1px;
+                padding: 5px 10px;
+                font-feature-settings: "palt";
+                letter-spacing: 0.08em;
+                }
+            }
+        }
+    
+
+    
+    .Title{
+        text-align: center;
+        margin-top: 50px;
+        
+        h2{
+            font-weight: bold;
+            margin-top: 30px;
+            font-size: 3em;
+            }
+        
+        p{
+            font-size: 2em;
+            line-height: 1.2em;
+            margin-top: 30px;
+            }
+        }
+    
+    .OldMenuBox{
+        width: 90%;
+        margin: 20px auto 0px;
+        @media (min-width: 768px) {
+            margin: 20px auto 20px;
+            }
+
+        h3{
+            font-size: 1.4em;
+            color: $main_color;
+            line-height: 0.7em;
+            margin-bottom: 15px;
+            font-weight: bold;
+            }
+
+        p{
+            margin-bottom: -10px;
+            }
+        }
+    }
+
+
+/*
+---------------------------------------------------------------------------------------------------------------------
+パスタグラム・パスタセット
+---------------------------------------------------------------------------------------------------------------------
+*/
+.GramSet{
+    margin: 50px auto 100px;
+    
+    h3{
+        background-color: #3e3a39;
+        color: #fff;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        font-size: 1.0em;
+        padding: 5px 10px;
+        font-feature-settings: "palt";
+        letter-spacing: 0.08em;
+        }
+    
+    .GramMenu{
+        display: flex;
+        
+        .GramTable{
+            font-size: 1.0em;
+            margin: auto;
+            @media (min-width: 768px) {
+                font-size: 1.2em;
+                }
+            
+            table{
+                width: 100%;
+                margin-top: 20px;
+
+                tr{
+                    line-height: 1.8em;
+
+                    .Gposition{
+                        text-align: right;
+                        width: 70px;
+                        @media (min-width: 768px) {
+                            width: 100px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+/*
+---------------------------------------------------------------------------------------------------------------------
+セットメニュー
+---------------------------------------------------------------------------------------------------------------------
+*/
+.SetMenu{
+    margin-top: 50px;
+    
+    .SetMenuBox{
+        margin-bottom: 0px;
+        @media (min-width: 768px) {
+            &.Right{
+                padding-left: 20px;
+                }
+            &.Left{
+                padding-right:20px;
+                }
+            }
+        
+        .SetText{
+            width: 90%;
+            margin: auto;
+            @media (min-width: 768px) {
+                width: 100%;
+                }
+            
+            h2{
+                font-size: 2.6em;
+                line-height: 0.8em;
+                color: #231815;
+                float: left;
+                margin-bottom: 10px;
+				margin-right: 10px;
+                @media (min-width: 768px) {
+                    font-size: 3em;
+                    }
+                }
+            
+            h2.ALLA{
+                font-size: 2.6em;
+                line-height: 0.8em;
+                color: #231815;
+                float: inherit;
+                margin-bottom: 10px;
+                @media (min-width: 768px) {
+                    float: left;
+                    font-size: 3em;
+                    }
+                }
+            
+            h3{
+                font-size: 1.4em;
+                margin-top: 5%;
+                font-weight: bold;
+                @media (min-width: 768px) {
+                    margin-top: 10%;
+                    }
+                }
+            
+            h5{
+                font-size: 1.0em;
+                color: #595757;
+                margin-top: 0px;
+                padding-top: 12px;
+				font-feature-settings:"palt";
+				letter-spacing: 0.05em;
+				&.ALLA{
+					text-align: left;
+					margin-top: -10px;
+					@media (min-width: 768px) {
+						margin-top: 0px;
+						}
+					}
+                @media (min-width: 768px) {
+                    padding-top: 15px;
+                    }
+                }
+            
+            h6{
+                font-size: 1em;
+                margin-top: 10px;
+                border-bottom: 1px #333 solid;
+                clear: both;
+                }
+
+            p{
+                font-size: 1em;
+                margin-top: 10px;
+                }
+            }
+        
+        h4{
+            font-size: 1.8em;
+            text-align: right;
+            margin-top: 20px;
+            padding-right: 5%;
+            @media (min-width: 768px) {
+                padding-right: 0%;
+                }
+
+            .en{
+                font-size: 0.7em;
+                line-height: 2em;
+                }
+            }
+        }
+    
+    .SetMenu2Box{
+        display: flex;
+        }
+    
+    
+    .SetTable{
+        margin-top: 40px;
+        
+        table.Doria{
+            width: 90%;
+            margin: auto;
+            @media (min-width: 768px) {
+                margin-left: 10%;
+                }
+            
+            tr{
+                line-height: 2.5em;
+                }
+            }
+        
+        table{
+            width: 100%;
+
+            th{
+                font-size: 1.4em;
+                text-align: left;
+                line-height: 1.3em;
+                @media (max-width: 767px) {
+                    font-size: 1.3em;
+                    width: 250px;
+                    }
+                }
+            
+            td{
+                font-size: 1.4em;
+                text-align: right;
+                
+                .en{
+                    font-size: 0.7em;
+                    line-height: 2em;
+                    }
+                }
+            }
+        h5{
+            font-size: 1em;
+            margin: 5px 0 40px 1em;
+            }
+        
+        p{
+            text-align: right;
+            margin-right: 5%;
+            @media (min-width: 768px) {
+                margin-right: 0%;
+                }
+            }
+        }
+    }
+
+
+/*
+---------------------------------------------------------------------------------------------------------------------
+デザート
+---------------------------------------------------------------------------------------------------------------------
+*/
+.Desert1{
+    
+    .DesertPh{
+        overflow-x: scroll;
+        
+        .TopPhoto{
+            display: flex;
+            width: 800px;
+            @media (min-width: 1024px) {
+                width: 1000px;
+                }
+            }
+        }
+    }
+
+
+.Desert2{
+    
+    .DesertText{
+        clear: both;
+        width: 90%;
+        margin: auto;
+        @media (min-width: 768px) {
+            width: 100%;
+            }
+        
+        h3{
+            font-size: 1.4em;
+            margin-top: 32px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            @media (min-width: 768px) {
+
+                }
+            }
+        }
+        
+        p{
+            font-size: 1.0em;
+            margin-left: 1em;
+            text-align: justify;
+            }
+
+    .SoftBox{
+        width: 90%;
+        margin: auto;
+        @media (min-width: 768px) {
+            width: 100%;
+            }
+        
+        h2{
+            font-size: 2.2em;
+            }
+        
+        h4{
+            font-size: 1.2em;
+            margin-top: 8px;
+            }
+        
+        .SoftMenu{
+            display: flex;
+
+            ul{
+                margin: 20px 0;
+                width: 50%;
+
+                li{
+                    font-size: 1.2em;
+                    line-height: 1.6em;
+                    font-weight: bold;
+                    @media (min-width: 768px) {
+                        font-size: 1.4em;
+                        }
+                    }
+                }
+
+            table{
+                border: 1px #333 solid;
+                width: 50%;
+                height: 90px;
+                margin-top: 20px;
+                @media (min-width: 768px) {
+                    height: 100px;
+                    }
+                
+                th{
+                    line-height: 1.0em;
+                    padding-left: 10px;
+                    }
+
+                td{
+                    text-align: right;
+                    line-height: 0.8em;
+                    padding-right: 10px;
+                    }
+                
+                .Left{
+                    text-align: left;
+                    padding-left: 10px;
+                    }
+                }
+            }    
+        }
+    }
+
+
+/*
+---------------------------------------------------------------------------------------------------------------------
+コース
+---------------------------------------------------------------------------------------------------------------------
+*/
+.Course{
+    margin-top: 150px;
+    
+    .CourseTitle{
+        border-bottom: 10px #231815 solid;
+        position: relative;
+        
+        .CourseText{
+            margin-left: 2%;
+            @media (min-width: 768px) {
+                display: flex;
+                margin-left: 0%;
+                }
+            
+            h2{
+                font-size: 3.2em;
+                font-weight: bold;
+                color: #231815;
+                padding-bottom: 5px;
+                @media (min-width: 768px) {
+                    font-size: 5em;
+                    padding-bottom: 20px;
+                    }
+                }
+
+            h3{
+                font-size: 1.0em;
+                margin-top: 12px;
+                margin-left: 5px;
+                font-weight: bold;
+                @media (min-width: 768px) {
+                    margin-top: 18px;
+                    font-size: 1.4em;
+                    }
+                }
+            
+            }
+
+        p{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            font-size: 1.0em;
+            @media (min-width: 768px) {
+                font-size: 1.4em;
+                }
+            }
+        }
+    
+    .CourseName{
+        margin: 20px auto 10px;
+        width: 90%;
+        @media (min-width: 768px) {
+            display: flex;
+            margin: 30px auto 4px;
+            width: 100%;
+            }
+        
+        h3{
+            font-size: 2.5em;
+            @media (min-width: 768px) {
+                font-size: 3em;
+                }
+            
+            &.wa{
+                font-size: 1.5em;
+                font-weight: bold;
+                @media (min-width: 768px) {
+                    font-size: 2.5em;
+                    }
+                }
+            }
+        
+        p{
+            font-size: 0.9em;
+            margin-top: 14px;
+            margin-left: 5px;
+            @media (min-width: 768px) {
+                font-size: 1em;
+                margin-top: 10px;
+                }
+            }
+        }
+    
+    .Photo{
+        position: relative;
+        
+        p{
+            font-size: 0.9em;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: #fff;
+            @media (min-width: 768px) {
+                font-size: 1em;
+                }
+            }
+        
+        img{
+            width: 100%;
+            height: auto;
+            }
+        }
+        
+    .CourseMenuBox{
+        width: 100%;
+        margin: 20px auto 0px;
+        padding: 4%;
+        @media (min-width: 768px) {
+            margin: 20px auto 10px;
+            &.Right{
+                border-right: 1px #ccc solid;
+                }
+            }
+        
+        h3{
+            font-size: 2em;
+            font-weight: bold;
+            font-feature-settings: "palt";
+            }
+
+        h4{
+            font-size: 1.8em;
+            text-align: right;
+            margin-top: 20px;
+
+            .en{
+                font-size: 0.7em;
+                line-height: 2em;
+                }
+            }
+
+        p{
+            font-size: 1.2em;
+            line-height: 1.6em;
+            margin-bottom: 10px;
+            }
+
+        h6{
+            font-size: 0.9em;
+            margin-bottom: 10px;
+            font-feature-settings: "palt";
+            }
+        }
+
+    .row>div {
+        padding: 0 0 0px 0;
+        }
+    
+    .swiper-container{
+        margin-top: 20px;
+        }
+    
+    .PartyMenu{
+        margin: 20px auto 150px;
+        width: 90%;
+        @media (min-width: 768px) {
+            margin: 40px auto 100px;
+            width: 100%;
+            }
+        
+        h3{
+            font-size: 1.2em;
+            }
+
+        .YoyakuMenu{
+            margin-top: 10px;
+            margin-bottom: 100px;
+            @media (min-width: 768px) {
+                display: flex;
+                }
+            
+            ul{
+                margin-right: 30px;
+                
+                li{
+                    font-size: 0.9em;
+                    line-height: 1.8em;
+                    @media (min-width: 768px) {
+                        font-size: 1.0em;
+                        }
+                    }
+                
+                ul{
+                    
+                    li{
+                        font-size: 0.8em;
+                        margin-left: 1.2em;
+                        @media (min-width: 768px) {
+                            font-size: 0.9em;
+                            }
+                        }
+                    }
+                }
+            
+            .PartyPrice{
+                text-align: right;
+                position: absolute;
+                right: 5%;
+                bottom: -70px;
+                @media (min-width: 768px) {
+                    right: 10%;
+                    bottom: 0;
+                    }
+
+                h4{
+                    font-size: 2em;
+                    text-align: right;
+                    margin-top: 20px;
+
+                    .en{
+                        font-size: 0.6em;
+                        line-height: 2em;
+                        }
+                    }
+                
+                p{
+                    font-size: 0.9em;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+/*========= 1文字ずつ出現させるためのCSS ===============*/
+.eachTextAnime span{opacity: 0;}
+.eachTextAnime.appeartext span{ animation:text_anime_on 1s ease-out forwards; }
+@keyframes text_anime_on {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+
+
+.Text-Span {
+  position: relative;
+  z-index: 1;
+}
+.Text-Span:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 0%;
+  height: 3px;
+  background: #333;
+  z-index: -1;
+  transition: all 0.8s;
+}
+.Text-Span.isActive:after {
+  width: 100%;
+}
+
+
+
+/*
+---------------------------------------------------------------------------------------------------------------------
+順番入れ替え
+---------------------------------------------------------------------------------------------------------------------
+*/
+.box{
+ display: flex;
+}
+@media screen and (max-width: 450px) {
+ .box{
+  flex-direction: column;
+ }
+}
+
+@media screen and (max-width: 450px) {
+.order1 {
+  order: 1;
+}
+.order2 {
+  order: 2;
+}
+.order3 {
+  order: 3;
+}
+.order4 {
+  order: 4;
+}
+.order5 {
+  order: 5;
+}
+.order6 {
+  order: 6;
+}
+.order7 {
+  order: 7;
+}
+.order8 {
+  order: 8;
+}
+.order9 {
+  order: 9;
+}
+.order10 {
+  order: 10;
+}
+.order11 {
+  order: 11;
+}
+.order12 {
+  order: 12;
+}
+.order13 {
+  order: 13;
+}
+.order14 {
+  order: 14;
+}
+}
+
+
+@media screen and (min-width: 680px){   
+  .pc { display:inline; }
+  .sp { display:none; }
+}
+@media screen and (max-width: 680px){   
+  .pc { display:none; }
+  .sp { display:inline; }
+}

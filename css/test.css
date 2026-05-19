@@ -1,0 +1,39 @@
+@charset "UTF-8";
+body#shopDetailPage #mainContent{
+    background-color: #eeeeee;
+    margin: 100px auto 0 auto;
+    width: 100%;
+    padding: 0 10% 0 10%;
+    .itemTitle{
+        font-size: 2rem;
+    }
+    .flexbox{
+        .left{
+            width: 50%;
+            .bx-wrapper{
+                .bx-viewport{
+                    overflow: visible!important;
+                    #slideImg{
+                        li{
+                            left: 0;
+                        .imgBox{
+                            width:100%;
+                            img{
+                                width: 100%;
+                                object-fit: cover;
+                                max-width: 1000px;
+                                max-height: 1000px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .right{
+            margin: 0;
+            width: 30%;
+    }
+}
+}
+

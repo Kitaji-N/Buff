@@ -1,0 +1,760 @@
+@charset "UTF-8";
+.MenuWidth {
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding-top: 50px; }
+
+.Title {
+  color: #231815;
+  width: 90%;
+  margin: 0 auto 70px; }
+  @media (min-width: 768px) {
+    .Title {
+      width: 100%; } }
+  .Title h1 {
+    text-align: right;
+    font-size: 3.4em;
+    margin: 30px auto 100px; }
+    @media (min-width: 768px) {
+      .Title h1 {
+        font-size: 6em; } }
+  .Title h2 {
+    font-size: 4em; }
+    @media (min-width: 768px) {
+      .Title h2 {
+        font-size: 5em; } }
+
+.MenuTable {
+  margin: auto;
+  font-size: 1.0em;
+  width: 90%; }
+  @media (min-width: 768px) {
+    .MenuTable {
+      font-size: 1.2em;
+      width: 100%; } }
+  .MenuTable table {
+    width: 100%;
+    margin-top: 20px; }
+    .MenuTable table .kakaku {
+      width: 80px; }
+    .MenuTable table tr {
+      line-height: 1.8em; }
+      .MenuTable table tr th {
+        vertical-align: top;
+        text-align: left; }
+        .MenuTable table tr th.Doria {
+          padding-left: 110px; }
+      .MenuTable table tr td {
+        text-align: right; }
+        .MenuTable table tr td .en {
+          font-size: 0.7em;
+          line-height: 2em; }
+      .MenuTable table tr .TextLeft {
+        text-align: left; }
+  .MenuTable p {
+    text-align: right;
+    font-size: 0.9em;
+    margin-top: 5px; }
+
+.Common .MenuTitle {
+  margin-top: 50px; }
+  .Common .MenuTitle.first {
+    margin-top: 0px; }
+  .Common .MenuTitle.Right {
+    text-align: right; }
+  .Common .MenuTitle h3 {
+    font-size: 2.8em;
+    color: #3e3a39;
+    line-height: 0.7em; }
+    @media (min-width: 768px) {
+      .Common .MenuTitle h3 {
+        font-size: 5em; } }
+  .Common .MenuTitle .Obi {
+    margin: auto; }
+    .Common .MenuTitle .Obi h4 {
+      background-color: #3e3a39;
+      color: #fff;
+      display: inline-block;
+      width: 100%;
+      font-size: 1.10em;
+      padding: 5px 20px;
+      font-feature-settings: "palt";
+      letter-spacing: 0.08em;
+      font-weight: bold; }
+.Common .PhotoBox {
+  position: relative; }
+  .Common .PhotoBox .Obi3 {
+    position: absolute;
+    bottom: 20px;
+    width: 90%; }
+    @media (min-width: 768px) {
+      .Common .PhotoBox .Obi3 {
+        width: 80%; } }
+    .Common .PhotoBox .Obi3.Left {
+      right: 0; }
+    .Common .PhotoBox .Obi3 h3 {
+      background-color: #3e3a39;
+      color: #fff;
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      font-size: 0.9em;
+      border-radius: 1px;
+      padding: 5px 10px;
+      font-feature-settings: "palt";
+      letter-spacing: 0.08em; }
+  .Common .PhotoBox .Pc img {
+    display: none; }
+    @media (min-width: 768px) {
+      .Common .PhotoBox .Pc img {
+        display: inherit; } }
+  @media (min-width: 768px) {
+    .Common .PhotoBox .Sp img {
+      display: none; } }
+  .Common .PhotoBox img {
+    width: 100%;
+    height: auto; }
+.Common .MenuBox {
+  width: 90%;
+  margin: 0 auto 40px; }
+  @media (min-width: 768px) {
+    .Common .MenuBox {
+      width: 100%;
+      margin-top: 10%; }
+      .Common .MenuBox.Right {
+        padding-left: 10%; }
+      .Common .MenuBox.Left {
+        padding-right: 10%; } }
+  .Common .MenuBox h5 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    line-height: 1.3em;
+    font-weight: bold; }
+  .Common .MenuBox p {
+    font-size: 1.0em;
+    line-height: 1.6em; }
+    @media (min-width: 768px) {
+      .Common .MenuBox p {
+        margin-bottom: 40px; } }
+
+/*
+---------------------------------------------------------------------------------------------------------------------
+▼その他パスタ
+---------------------------------------------------------------------------------------------------------------------
+*/
+.Other {
+  overflow-x: scroll; }
+  @media (min-width: 768px) {
+    .Other {
+      margin-top: 50px; } }
+  .Other .OtherWidth {
+    display: flex;
+    width: 900px; }
+    @media (min-width: 1024px) {
+      .Other .OtherWidth {
+        width: 1000px; } }
+  .Other .OtherBox {
+    padding-bottom: 20px; }
+    .Other .OtherBox .Photo {
+      position: relative;
+      background-color: #3e3a39;
+      margin-bottom: 20px;
+      text-align: center;
+      padding-top: 20px; }
+      .Other .OtherBox .Photo img {
+        width: 94%;
+        height: auto; }
+      .Other .OtherBox .Photo .Text {
+        position: absolute;
+        top: 25px;
+        left: 5%;
+        text-align: left; }
+      .Other .OtherBox .Photo h4 {
+        color: #231815;
+        font-size: 3em;
+        line-height: 0.9em;
+        margin-bottom: 10px; }
+      .Other .OtherBox .Photo h5 {
+        color: #fff;
+        font-size: 1.6em;
+        font-weight: bold;
+        font-feature-settings: "palt";
+        letter-spacing: 0.05em; }
+    .Other .OtherBox .OtherMenu {
+      width: 95%;
+      margin: auto; }
+      .Other .OtherBox .OtherMenu h3 {
+        font-size: 1.4em;
+        color: #666666;
+        line-height: 0.7em;
+        margin-bottom: 15px;
+        font-weight: bold; }
+      .Other .OtherBox .OtherMenu p {
+        font-size: 1.0em; }
+
+/*
+---------------------------------------------------------------------------------------------------------------------
+昔風鉄板パスタ
+---------------------------------------------------------------------------------------------------------------------
+*/
+.OldStyle {
+  margin-top: 80px; }
+  .OldStyle .MainPhoto {
+    position: relative; }
+    .OldStyle .MainPhoto img {
+      width: 100%;
+      height: auto; }
+    .OldStyle .MainPhoto .MenuName {
+      position: absolute;
+      top: 5%;
+      left: 10px;
+      color: #fff; }
+      .OldStyle .MainPhoto .MenuName h4 {
+        font-size: 2.4em; }
+        @media (min-width: 768px) {
+          .OldStyle .MainPhoto .MenuName h4 {
+            font-size: 5em; } }
+      .OldStyle .MainPhoto .MenuName p {
+        font-size: 1.4em;
+        font-feature-settings: "palt";
+        letter-spacing: 0.08em;
+        margin-top: 15px; }
+        @media (min-width: 768px) {
+          .OldStyle .MainPhoto .MenuName p {
+            margin-top: 35px;
+            font-size: 2em; } }
+    .OldStyle .MainPhoto .Obi3 {
+      position: absolute;
+      bottom: 10px;
+      width: 90%;
+      right: 0; }
+      @media (min-width: 768px) {
+        .OldStyle .MainPhoto .Obi3 {
+          width: 50%;
+          bottom: 50px; } }
+      .OldStyle .MainPhoto .Obi3 h3 {
+        background-color: #3e3a39;
+        color: #fff;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        font-size: 1.0em;
+        border-radius: 1px;
+        padding: 5px 10px;
+        font-feature-settings: "palt";
+        letter-spacing: 0.08em; }
+  .OldStyle .Title {
+    text-align: center;
+    margin-top: 50px; }
+    .OldStyle .Title h2 {
+      font-weight: bold;
+      margin-top: 30px;
+      font-size: 3em; }
+    .OldStyle .Title p {
+      font-size: 2em;
+      line-height: 1.2em;
+      margin-top: 30px; }
+  .OldStyle .OldMenuBox {
+    width: 90%;
+    margin: 20px auto 0px; }
+    @media (min-width: 768px) {
+      .OldStyle .OldMenuBox {
+        margin: 20px auto 20px; } }
+    .OldStyle .OldMenuBox h3 {
+      font-size: 1.4em;
+      color: #666666;
+      line-height: 0.7em;
+      margin-bottom: 15px;
+      font-weight: bold; }
+    .OldStyle .OldMenuBox p {
+      margin-bottom: -10px; }
+
+/*
+---------------------------------------------------------------------------------------------------------------------
+パスタグラム・パスタセット
+---------------------------------------------------------------------------------------------------------------------
+*/
+.GramSet {
+  margin: 50px auto 100px; }
+  .GramSet h3 {
+    background-color: #3e3a39;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.0em;
+    padding: 5px 10px;
+    font-feature-settings: "palt";
+    letter-spacing: 0.08em; }
+  .GramSet .GramMenu {
+    display: flex; }
+    .GramSet .GramMenu .GramTable {
+      font-size: 1.0em;
+      margin: auto; }
+      @media (min-width: 768px) {
+        .GramSet .GramMenu .GramTable {
+          font-size: 1.2em; } }
+      .GramSet .GramMenu .GramTable table {
+        width: 100%;
+        margin-top: 20px; }
+        .GramSet .GramMenu .GramTable table tr {
+          line-height: 1.8em; }
+          .GramSet .GramMenu .GramTable table tr .Gposition {
+            text-align: right;
+            width: 70px; }
+            @media (min-width: 768px) {
+              .GramSet .GramMenu .GramTable table tr .Gposition {
+                width: 100px; } }
+
+/*
+---------------------------------------------------------------------------------------------------------------------
+セットメニュー
+---------------------------------------------------------------------------------------------------------------------
+*/
+.SetMenu {
+  margin-top: 50px; }
+  .SetMenu .SetMenuBox {
+    margin-bottom: 0px; }
+    @media (min-width: 768px) {
+      .SetMenu .SetMenuBox.Right {
+        padding-left: 20px; }
+      .SetMenu .SetMenuBox.Left {
+        padding-right: 20px; } }
+    .SetMenu .SetMenuBox .SetText {
+      width: 90%;
+      margin: auto; }
+      @media (min-width: 768px) {
+        .SetMenu .SetMenuBox .SetText {
+          width: 100%; } }
+      .SetMenu .SetMenuBox .SetText h2 {
+        font-size: 2.6em;
+        line-height: 0.8em;
+        color: #231815;
+        float: left;
+        margin-bottom: 10px;
+        margin-right: 10px; }
+        @media (min-width: 768px) {
+          .SetMenu .SetMenuBox .SetText h2 {
+            font-size: 3em; } }
+      .SetMenu .SetMenuBox .SetText h2.ALLA {
+        font-size: 2.6em;
+        line-height: 0.8em;
+        color: #231815;
+        float: inherit;
+        margin-bottom: 10px; }
+        @media (min-width: 768px) {
+          .SetMenu .SetMenuBox .SetText h2.ALLA {
+            float: left;
+            font-size: 3em; } }
+      .SetMenu .SetMenuBox .SetText h3 {
+        font-size: 1.4em;
+        margin-top: 5%;
+        font-weight: bold; }
+        @media (min-width: 768px) {
+          .SetMenu .SetMenuBox .SetText h3 {
+            margin-top: 10%; } }
+      .SetMenu .SetMenuBox .SetText h5 {
+        font-size: 1.0em;
+        color: #595757;
+        margin-top: 0px;
+        padding-top: 12px;
+        font-feature-settings: "palt";
+        letter-spacing: 0.05em; }
+        .SetMenu .SetMenuBox .SetText h5.ALLA {
+          text-align: left;
+          margin-top: -10px; }
+          @media (min-width: 768px) {
+            .SetMenu .SetMenuBox .SetText h5.ALLA {
+              margin-top: 0px; } }
+        @media (min-width: 768px) {
+          .SetMenu .SetMenuBox .SetText h5 {
+            padding-top: 15px; } }
+      .SetMenu .SetMenuBox .SetText h6 {
+        font-size: 1em;
+        margin-top: 10px;
+        border-bottom: 1px #333 solid;
+        clear: both; }
+      .SetMenu .SetMenuBox .SetText p {
+        font-size: 1em;
+        margin-top: 10px; }
+    .SetMenu .SetMenuBox h4 {
+      font-size: 1.8em;
+      text-align: right;
+      margin-top: 20px;
+      padding-right: 5%; }
+      @media (min-width: 768px) {
+        .SetMenu .SetMenuBox h4 {
+          padding-right: 0%; } }
+      .SetMenu .SetMenuBox h4 .en {
+        font-size: 0.7em;
+        line-height: 2em; }
+  .SetMenu .SetMenu2Box {
+    display: flex; }
+  .SetMenu .SetTable {
+    margin-top: 40px; }
+    .SetMenu .SetTable table.Doria {
+      width: 90%;
+      margin: auto; }
+      @media (min-width: 768px) {
+        .SetMenu .SetTable table.Doria {
+          margin-left: 10%; } }
+      .SetMenu .SetTable table.Doria tr {
+        line-height: 2.5em; }
+    .SetMenu .SetTable table {
+      width: 100%; }
+      .SetMenu .SetTable table th {
+        font-size: 1.4em;
+        text-align: left;
+        line-height: 1.3em; }
+        @media (max-width: 767px) {
+          .SetMenu .SetTable table th {
+            font-size: 1.3em;
+            width: 250px; } }
+      .SetMenu .SetTable table td {
+        font-size: 1.4em;
+        text-align: right; }
+        .SetMenu .SetTable table td .en {
+          font-size: 0.7em;
+          line-height: 2em; }
+    .SetMenu .SetTable h5 {
+      font-size: 1em;
+      margin: 5px 0 40px 1em; }
+    .SetMenu .SetTable p {
+      text-align: right;
+      margin-right: 5%; }
+      @media (min-width: 768px) {
+        .SetMenu .SetTable p {
+          margin-right: 0%; } }
+
+/*
+---------------------------------------------------------------------------------------------------------------------
+デザート
+---------------------------------------------------------------------------------------------------------------------
+*/
+.Desert1 .DesertPh {
+  overflow-x: scroll; }
+  .Desert1 .DesertPh .TopPhoto {
+    display: flex;
+    width: 800px; }
+    @media (min-width: 1024px) {
+      .Desert1 .DesertPh .TopPhoto {
+        width: 1000px; } }
+
+.Desert2 .DesertText {
+  clear: both;
+  width: 90%;
+  margin: auto; }
+  @media (min-width: 768px) {
+    .Desert2 .DesertText {
+      width: 100%; } }
+  .Desert2 .DesertText h3 {
+    font-size: 1.4em;
+    margin-top: 32px;
+    font-weight: bold;
+    margin-bottom: 5px; }
+.Desert2 p {
+  font-size: 1.0em;
+  margin-left: 1em;
+  text-align: justify; }
+.Desert2 .SoftBox {
+  width: 90%;
+  margin: auto; }
+  @media (min-width: 768px) {
+    .Desert2 .SoftBox {
+      width: 100%; } }
+  .Desert2 .SoftBox h2 {
+    font-size: 2.2em; }
+  .Desert2 .SoftBox h4 {
+    font-size: 1.2em;
+    margin-top: 8px; }
+  .Desert2 .SoftBox .SoftMenu {
+    display: flex; }
+    .Desert2 .SoftBox .SoftMenu ul {
+      margin: 20px 0;
+      width: 50%; }
+      .Desert2 .SoftBox .SoftMenu ul li {
+        font-size: 1.2em;
+        line-height: 1.6em;
+        font-weight: bold; }
+        @media (min-width: 768px) {
+          .Desert2 .SoftBox .SoftMenu ul li {
+            font-size: 1.4em; } }
+    .Desert2 .SoftBox .SoftMenu table {
+      border: 1px #333 solid;
+      width: 50%;
+      height: 90px;
+      margin-top: 20px; }
+      @media (min-width: 768px) {
+        .Desert2 .SoftBox .SoftMenu table {
+          height: 100px; } }
+      .Desert2 .SoftBox .SoftMenu table th {
+        line-height: 1.0em;
+        padding-left: 10px; }
+      .Desert2 .SoftBox .SoftMenu table td {
+        text-align: right;
+        line-height: 0.8em;
+        padding-right: 10px; }
+      .Desert2 .SoftBox .SoftMenu table .Left {
+        text-align: left;
+        padding-left: 10px; }
+
+/*
+---------------------------------------------------------------------------------------------------------------------
+コース
+---------------------------------------------------------------------------------------------------------------------
+*/
+.Course {
+  margin-top: 150px; }
+  .Course .CourseTitle {
+    border-bottom: 10px #231815 solid;
+    position: relative; }
+    .Course .CourseTitle .CourseText {
+      margin-left: 2%; }
+      @media (min-width: 768px) {
+        .Course .CourseTitle .CourseText {
+          display: flex;
+          margin-left: 0%; } }
+      .Course .CourseTitle .CourseText h2 {
+        font-size: 3.2em;
+        font-weight: bold;
+        color: #231815;
+        padding-bottom: 5px; }
+        @media (min-width: 768px) {
+          .Course .CourseTitle .CourseText h2 {
+            font-size: 5em;
+            padding-bottom: 20px; } }
+      .Course .CourseTitle .CourseText h3 {
+        font-size: 1.0em;
+        margin-top: 12px;
+        margin-left: 5px;
+        font-weight: bold; }
+        @media (min-width: 768px) {
+          .Course .CourseTitle .CourseText h3 {
+            margin-top: 18px;
+            font-size: 1.4em; } }
+    .Course .CourseTitle p {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      font-size: 1.0em; }
+      @media (min-width: 768px) {
+        .Course .CourseTitle p {
+          font-size: 1.4em; } }
+  .Course .CourseName {
+    margin: 20px auto 10px;
+    width: 90%; }
+    @media (min-width: 768px) {
+      .Course .CourseName {
+        display: flex;
+        margin: 30px auto 4px;
+        width: 100%; } }
+    .Course .CourseName h3 {
+      font-size: 2.5em; }
+      @media (min-width: 768px) {
+        .Course .CourseName h3 {
+          font-size: 3em; } }
+      .Course .CourseName h3.wa {
+        font-size: 1.5em;
+        font-weight: bold; }
+        @media (min-width: 768px) {
+          .Course .CourseName h3.wa {
+            font-size: 2.5em; } }
+    .Course .CourseName p {
+      font-size: 0.9em;
+      margin-top: 14px;
+      margin-left: 5px; }
+      @media (min-width: 768px) {
+        .Course .CourseName p {
+          font-size: 1em;
+          margin-top: 10px; } }
+  .Course .Photo {
+    position: relative; }
+    .Course .Photo p {
+      font-size: 0.9em;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: #fff; }
+      @media (min-width: 768px) {
+        .Course .Photo p {
+          font-size: 1em; } }
+    .Course .Photo img {
+      width: 100%;
+      height: auto; }
+  .Course .CourseMenuBox {
+    width: 100%;
+    margin: 20px auto 0px;
+    padding: 4%; }
+    @media (min-width: 768px) {
+      .Course .CourseMenuBox {
+        margin: 20px auto 10px; }
+        .Course .CourseMenuBox.Right {
+          border-right: 1px #ccc solid; } }
+    .Course .CourseMenuBox h3 {
+      font-size: 2em;
+      font-weight: bold;
+      font-feature-settings: "palt"; }
+    .Course .CourseMenuBox h4 {
+      font-size: 1.8em;
+      text-align: right;
+      margin-top: 20px; }
+      .Course .CourseMenuBox h4 .en {
+        font-size: 0.7em;
+        line-height: 2em; }
+    .Course .CourseMenuBox p {
+      font-size: 1.2em;
+      line-height: 1.6em;
+      margin-bottom: 10px; }
+    .Course .CourseMenuBox h6 {
+      font-size: 0.9em;
+      margin-bottom: 10px;
+      font-feature-settings: "palt"; }
+  .Course .row > div {
+    padding: 0 0 0px 0; }
+  .Course .swiper-container {
+    margin-top: 20px; }
+  .Course .PartyMenu {
+    margin: 20px auto 150px;
+    width: 90%; }
+    @media (min-width: 768px) {
+      .Course .PartyMenu {
+        margin: 40px auto 100px;
+        width: 100%; } }
+    .Course .PartyMenu h3 {
+      font-size: 1.2em; }
+    .Course .PartyMenu .YoyakuMenu {
+      margin-top: 10px;
+      margin-bottom: 100px; }
+      @media (min-width: 768px) {
+        .Course .PartyMenu .YoyakuMenu {
+          display: flex; } }
+      .Course .PartyMenu .YoyakuMenu ul {
+        margin-right: 30px; }
+        .Course .PartyMenu .YoyakuMenu ul li {
+          font-size: 0.9em;
+          line-height: 1.8em; }
+          @media (min-width: 768px) {
+            .Course .PartyMenu .YoyakuMenu ul li {
+              font-size: 1.0em; } }
+        .Course .PartyMenu .YoyakuMenu ul ul li {
+          font-size: 0.8em;
+          margin-left: 1.2em; }
+          @media (min-width: 768px) {
+            .Course .PartyMenu .YoyakuMenu ul ul li {
+              font-size: 0.9em; } }
+      .Course .PartyMenu .YoyakuMenu .PartyPrice {
+        text-align: right;
+        position: absolute;
+        right: 5%;
+        bottom: -70px; }
+        @media (min-width: 768px) {
+          .Course .PartyMenu .YoyakuMenu .PartyPrice {
+            right: 10%;
+            bottom: 0; } }
+        .Course .PartyMenu .YoyakuMenu .PartyPrice h4 {
+          font-size: 2em;
+          text-align: right;
+          margin-top: 20px; }
+          .Course .PartyMenu .YoyakuMenu .PartyPrice h4 .en {
+            font-size: 0.6em;
+            line-height: 2em; }
+        .Course .PartyMenu .YoyakuMenu .PartyPrice p {
+          font-size: 0.9em; }
+
+/*========= 1文字ずつ出現させるためのCSS ===============*/
+.eachTextAnime span {
+  opacity: 0; }
+
+.eachTextAnime.appeartext span {
+  animation: text_anime_on 1s ease-out forwards; }
+
+@keyframes text_anime_on {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.Text-Span {
+  position: relative;
+  z-index: 1; }
+
+.Text-Span:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 0%;
+  height: 3px;
+  background: #333;
+  z-index: -1;
+  transition: all 0.8s; }
+
+.Text-Span.isActive:after {
+  width: 100%; }
+
+/*
+---------------------------------------------------------------------------------------------------------------------
+順番入れ替え
+---------------------------------------------------------------------------------------------------------------------
+*/
+.box {
+  display: flex; }
+
+@media screen and (max-width: 450px) {
+  .box {
+    flex-direction: column; } }
+@media screen and (max-width: 450px) {
+  .order1 {
+    order: 1; }
+
+  .order2 {
+    order: 2; }
+
+  .order3 {
+    order: 3; }
+
+  .order4 {
+    order: 4; }
+
+  .order5 {
+    order: 5; }
+
+  .order6 {
+    order: 6; }
+
+  .order7 {
+    order: 7; }
+
+  .order8 {
+    order: 8; }
+
+  .order9 {
+    order: 9; }
+
+  .order10 {
+    order: 10; }
+
+  .order11 {
+    order: 11; }
+
+  .order12 {
+    order: 12; }
+
+  .order13 {
+    order: 13; }
+
+  .order14 {
+    order: 14; } }
+@media screen and (min-width: 680px) {
+  .pc {
+    display: inline; }
+
+  .sp {
+    display: none; } }
+@media screen and (max-width: 680px) {
+  .pc {
+    display: none; }
+
+  .sp {
+    display: inline; } }

@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+
+
+@media only screen and (max-width: 1024px) {
+    .pc {
+      display: none !important;
+    }
+    .gallery02 .swiper-button-prev::before, .gallery02 .swiper-button-next::before {
+      background-color: rgba(0, 0, 0, 0.3);
+      -webkit-box-shadow: var(--box-shadow-dark);
+              box-shadow: var(--box-shadow-dark);
+    }
+    .gallery02 .swiper-button-prev::after, .gallery02 .swiper-button-next::after {
+      border-color: #fff;
+    }
+    .gallery02 .swiper-button-prev {
+      right: calc(100% - 3.2rem);
+    }
+    .gallery02 .swiper-button-next {
+      left: calc(100% - 3.2rem);
+    }
+  }
+
+  @media only screen and (max-width: 599px) {
+    #mainHeader {
+      & #shopHeader {
+          .flexbox {
+              align-items: center;
+              margin-left: 25%;
+              width: 100%;
+          }
+        }
+      }
+    .pc-tab {
+      display: none !important;
+    }
+    .gallery02 .thumb-wrapper {
+      grid-template-columns: repeat(5, 1fr);
+    }
+    body#shopDetailPage #mainContent {
+      .itemTitle {
+            font-size: 1.2rem;
+      }
+  }
+  body.template #category-menu span {
+    padding: 0;
+  }
+}
+
+  @media only screen and (min-width: 1025px) {
+    .tab-sp {
+      display: none !important;
+    }
+    .swiper-button-prev::before, .swiper-button-next::before {
+      -webkit-transition: var(--transition);
+      transition: var(--transition);
+    }
+    .swiper-button-prev:hover::before, .swiper-button-next:hover::before {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+    }
+    .gallery02 .thumb-media:hover {
+      -webkit-transform: scale(0.9);
+              transform: scale(0.9);
+    }
+    .gallery02 .thumb-media:hover img {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+    .sp {
+      display: none !important;
+    }
+  }
+.swiper-slide img:not([src]) {
+  display: none;
+}
+
+/* お問い合わせページ */
+
+.inquirySection {
+    margin-top: 60px;
+}
+.main{
+  background-color: #eeeeee;
+}
+#privacy,#law,.main{
+  background-color: #eeeeee;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 16px;
+}
+.inquirySection .control-panel input#buttonLeave {
+  font-size: 16px;
+}
